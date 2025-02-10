@@ -8,6 +8,7 @@ import { MutableRef } from "./components/ref/MutableRef";
 import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { List } from "./components/generics/List";
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,27 @@ function App() {
       </UserContextProvider> */}
       {/* <MutableRef /> */}
       {/* <Counter message="hello 132" /> */}
-      <Private isLoggedIn={true} component={Profile} />
+      {/* <Private isLoggedIn={true} component={Profile} /> */}
+      {/* <List
+        items={["yohan", "park", "kim"]}
+        onClick={(value) => {
+          console.log(value);
+        }}
+      /> */}
+
+      <List
+        items={[
+          {
+            id: 1,
+            first: "yohan",
+            last: "park",
+          },
+          { id: 2, first: "park", last: "kim" },
+        ]}
+        onClick={(value) => {
+          console.log(value);
+        }}
+      />
     </div>
   );
 }

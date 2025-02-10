@@ -1,8 +1,9 @@
 // import {Login} from "./Login";
 
 import { Component } from "react";
-import { Login } from "./login";
+
 import { ProfileProps } from "./Profile";
+import { Login } from "./Login";
 
 type PrivateProps = {
   isLoggedIn: boolean;
