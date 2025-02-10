@@ -12,6 +12,7 @@ import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/Button";
+import { CustomComponent } from "./components/html/CustomComponent";
 function App() {
   return (
     <div className="App">
@@ -43,14 +44,15 @@ function App() {
       /> */}
       {/* <RandomNumber value={3} isPositive={true} isNegative={true} /> */}
       {/* <Toast position="center" /> */}
-      <CustomButton
+      {/* <CustomButton
         variant="primary"
         onClick={() => {
           console.log("click");
         }}
       >
         Primary Button
-      </CustomButton>
+      </CustomButton> */}
+      <CustomComponent name="yohan" isLoggedIn={false} />
     </div>
   );
 }
