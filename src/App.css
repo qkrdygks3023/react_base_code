@@ -40,3 +40,18 @@
 .read-the-docs {
   color: #888;
 }
+
+.class-with-sm-primary {
+  font-size: 14px;
+  color: black;
+}
+
+.class-with-md-primary {
+  font-size: 18px;
+  color: black;
+}
+
+.class-with-lg-primary {
+  font-size: 24px;
+  color: black;
+}

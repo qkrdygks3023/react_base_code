@@ -13,6 +13,7 @@ import { RandomNumber } from "./components/restriction/RandomNumber";
 import { Toast } from "./components/templateliterals/Toast";
 import { CustomButton } from "./components/html/Button";
 import { CustomComponent } from "./components/html/CustomComponent";
+import { Text } from "./components/polymorphic/Text";
 function App() {
   return (
     <div className="App">
@@ -52,7 +53,16 @@ function App() {
       >
         Primary Button
       </CustomButton> */}
-      <CustomComponent name="yohan" isLoggedIn={false} />
+      {/* <CustomComponent name="yohan" isLoggedIn={false} /> */}
+      <Text size="sm" color="primary">
+        hello
+      </Text>
+      <Text size="md" color="primary" as="h1">
+        hello
+      </Text>
+      <Text size="lg" color="primary">
+        hello
+      </Text>
     </div>
   );
 }
