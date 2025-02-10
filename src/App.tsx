@@ -9,6 +9,7 @@ import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 function App() {
   return (
     <div className="App">
@@ -25,7 +26,7 @@ function App() {
         }}
       /> */}
 
-      <List
+      {/* <List
         items={[
           {
             id: 1,
@@ -37,7 +38,9 @@ function App() {
         onClick={(value) => {
           console.log(value);
         }}
-      />
+      /> */}
+
+      <RandomNumber value={3} isPositive={true} isNegative={true} />
     </div>
   );
 }
