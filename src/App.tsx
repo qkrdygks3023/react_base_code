@@ -10,6 +10,7 @@ import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restriction/RandomNumber";
+import { Toast } from "./components/templateliterals/Toast";
 function App() {
   return (
     <div className="App">
@@ -39,8 +40,8 @@ function App() {
           console.log(value);
         }}
       /> */}
-
-      <RandomNumber value={3} isPositive={true} isNegative={true} />
+      {/* <RandomNumber value={3} isPositive={true} isNegative={true} /> */}
+      <Toast position="center" />
     </div>
   );
 }
