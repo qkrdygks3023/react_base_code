@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { UserContext } from "./UserContext";
 
-type AuthUser = {
-  name: string;
-  email: string;
-};
+// type AuthUser = {
+//   name: string;
+//   email: string;
+// };
 
 export const User = () => {
   const userContext = useContext(UserContext);

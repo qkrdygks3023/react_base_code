@@ -10,22 +10,6 @@ type TextOwnProps<E extends React.ElementType> = {
 type TextProps<E extends React.ElementType> = TextOwnProps<E> &
   Omit<React.ComponentProps<E>, keyof TextOwnProps<E>>;
 
-// export const Text = React.forwardRef<HTMLSpanElement, TextProps>(
-//   ({ size, color, children }, ref) => {
-//     return (
-//       <span
-//         ref={ref}
-//         style={{
-//           fontSize: size,
-//           color: color,
-//         }}
-//       >
-//         {children}
-//       </span>
-//     );
-//   }
-// );
-
 export const Text = <E extends React.ElementType = "div">({
   size,
   color,

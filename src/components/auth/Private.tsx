@@ -1,7 +1,5 @@
 // import {Login} from "./Login";
 
-import { Component } from "react";
-
 import { ProfileProps } from "./Profile";
 import { Login } from "./Login";
 
